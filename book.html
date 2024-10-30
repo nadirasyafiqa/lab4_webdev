@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const stuData = {
+            "book": [
+                {
+                    "title": "The Great Gatsby",
+                    "author": "F. Scott Fitzgerald",
+                    "publication": "1925",
+                    "genres": ["Fiction", "Classic"]
+                },
+                {    
+                    "title": "To Kill a Mockingbird",
+                    "author": "Harper Lee",
+                    "publication": "1960",
+                    "genres": ["Fiction", "Coming-of-Age"]
+                }
+            ]
+        };
+
+        // Accessing book details
+        console.log(stuData.book[0].title);
+        console.log(stuData.book[1].title);
+        console.log('-------------------');
+
+        // Loop through the books and display details
+        stuData.book.forEach(book => {
+            console.log(`Title: ${book.title}`);
+            console.log(`Author: ${book.author}`);
+            console.log(`Publication Year: ${book.publication}`);
+            console.log(`Genres: ${book.genres.join(', ')}`);
+            console.log('-------------------');
+        });
+
+    </script>
+</body>
+</html>
